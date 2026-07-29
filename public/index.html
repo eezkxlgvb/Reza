@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flow — ورود</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- کروی‌های پس‌زمینه -->
+    <div class="bg-blobs">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+    </div>
+
+    <!-- کارت ورود -->
+    <div class="container">
+        <div class="login-card">
+            <!-- هدر -->
+            <div class="header">
+                <div class="logo-icon">🌊</div>
+                <h1>Flow</h1>
+                <p class="subtitle">Good to see you. Dive back in.</p>
+            </div>
+
+            <!-- فرم -->
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">نام کاربری</label>
+                    <input type="text" id="username" placeholder="username" value="flowuser" />
+                    <span class="input-icon">👤</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">رمز عبور</label>
+                    <input type="password" id="password" placeholder="••••••••" value="12345678" />
+                    <span class="input-icon">🔒</span>
+                </div>
+
+                <button type="submit" class="btn" id="loginBtn">
+                    <span class="btn-text">ورود</span>
+                    <span class="btn-wave"></span>
+                </button>
+
+                <div class="options">
+                    <label class="remember">
+                        <input type="checkbox" checked /> مرا به خاطر بسپار
+                    </label>
+                    <a href="#" class="forgot">رمز را فراموش کردی؟</a>
+                </div>
+            </form>
+
+            <div id="message" class="message"></div>
+
+            <!-- فوتر -->
+            <footer>
+                <p>© 2026 Flow — همه حقوق محفوظ است</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
